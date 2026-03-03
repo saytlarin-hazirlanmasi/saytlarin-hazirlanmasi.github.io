@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ── Əsas SEO ── -->
+<title>Saytların Hazırlanması — Veb Sayt Sifarişi | Elmar Zeynalov | Bakı</title>
+<meta name="description" content="Peşəkar sayt hazırlanması xidməti. Elmar Zeynalov — Bakı əsaslı Full-Stack Developer və Kibertəhlükəsizlik mütəxəssisi. 9+ il təcrübə, 15+ real layihə. PHP, MySQL, AI inteqrasiyası, WordPress, korporativ saytlar, internet mağaza.">
+<meta name="keywords" content="saytlarin hazirlanmasi, sayt sifarisi, veb sayt hazirlanmasi, web sayt sifarisi baki, sayt yaratmaq, internet sayt hazirlanmasi, sayt qiymeti, web developer baki, proqramci baki, sayt dizayni, wordpress sayt, korporativ sayt, internet magazasi hazirlanmasi, seo optimallasma, elmar zeynalov, full stack developer azerbaycan, php developer baki, kibertəhlükəsizlik mütəxəssisi">
+<meta name="author" content="Elmar Zeynalov">
+<meta name="robots" content="index, follow">
+<meta name="language" content="az">
+<meta name="geo.region" content="AZ-BA">
+<meta name="geo.placename" content="Bakı, Azərbaycan">
+<link rel="canonical" href="https://saytlarin-hazirlanmasi.github.io/">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saytlarin-hazirlanmasi.github.io/">
+<meta property="og:title" content="Saytların Hazırlanması — Peşəkar Veb Sayt Sifarişi | Bakı">
+<meta property="og:description" content="9+ il təcrübə. 15+ real layihə. Dövlət sistemlərindən startaplara qədər. PHP, AI, Security.">
+<meta property="og:locale" content="az_AZ">
+<meta property="og:site_name" content="Saytların Hazırlanması — Elmar Zeynalov">
+
+<!-- ── Twitter/X Card ── -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Saytların Hazırlanması — Elmar Zeynalov">
+<meta name="twitter:description" content="Peşəkar sayt hazırlanması. 9+ il təcrübə. 15+ real layihə.">
+
+<!-- ── Structured Data JSON-LD ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Saytların Hazırlanması — Elmar Zeynalov",
+  "url": "https://saytlarin-hazirlanmasi.github.io",
+  "description": "Bakıda peşəkar veb sayt hazırlanması xidməti. Korporativ saytlar, internet mağazalar, təhsil platformaları, dövlət sistemləri.",
+  "telephone": "+994502009077",
+  "email": "info@elmarzeynalov.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bakı",
+    "addressRegion": "Bakı",
+    "addressCountry": "AZ"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Elmar Zeynalov",
+    "url": "https://elmarzeynalov.com",
+    "jobTitle": "Full-Stack Developer və Kibertəhlükəsizlik Mütəxəssisi",
+    "sameAs": [
+      "https://www.linkedin.com/in/elmar-zeynalov-programmierer"
+    ]
+  },
+  "serviceType": ["Veb sayt hazırlanması", "Korporativ sayt", "Internet mağaza", "SEO optimallaşdırma", "Kibertəhlükəsizlik"],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Azərbaycan"
+  },
+  "knowsAbout": [
+    "PHP", "MySQL", "JavaScript", "REST API",
+    "Kibertəhlükəsizlik", "Penetrasiya Testi", "OWASP",
+    "WordPress", "Android", "SEO", "AI İnteqrasiya"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --c1: #6c3bff; --c2: #ff3b8b; --c3: #00c6ff; --c4: #ffb800; --c5: #00e5a0;
+  --bg: #f5f3ff; --bg2: #ffffff; --text: #0d0a1e; --text2: #4a4468;
+  --border: rgba(108,59,255,0.12);
+  --grad: linear-gradient(135deg, var(--c1), var(--c2));
+  --grad2: linear-gradient(135deg, var(--c3), var(--c5));
+  --grad3: linear-gradient(135deg, var(--c4), var(--c2));
+  --shadow: 0 20px 60px rgba(108,59,255,0.15);
+  --shadow2: 0 8px 30px rgba(108,59,255,0.2);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--text); font-family:'Plus Jakarta Sans',sans-serif; overflow-x:hidden; }
+.blob { position:fixed; border-radius:50%; filter:blur(80px); opacity:0.25; pointer-events:none; z-index:0; animation:blobFloat 8s ease-in-out infinite; }
+.blob1 { width:600px;height:600px;background:var(--c1);top:-200px;left:-200px;animation-delay:0s; }
+.blob2 { width:500px;height:500px;background:var(--c2);top:50%;right:-150px;animation-delay:2s; }
+.blob3 { width:400px;height:400px;background:var(--c3);bottom:-100px;left:30%;animation-delay:4s; }
+@keyframes blobFloat {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(30px,-20px) scale(1.05); }
+  66% { transform: translate(-20px,30px) scale(0.95); }
+}
+nav { position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:16px 60px;background:rgba(245,243,255,0.85);backdrop-filter:blur(24px);border-bottom:1px solid var(--border); }
+.nav-logo { font-weight:800;font-size:18px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none; }
+.nav-links { display:flex;gap:32px;list-style:none; }
+.nav-links a { color:var(--text2);text-decoration:none;font-size:14px;font-weight:600;transition:color 0.2s; }
+.nav-links a:hover { color:var(--c1); }
+.nav-right { display:flex;align-items:center;gap:12px; }
+.nav-cta { padding:10px 24px;background:var(--grad);color:#fff;border-radius:100px;text-decoration:none;font-size:14px;font-weight:700;transition:all 0.2s;box-shadow:0 4px 20px rgba(108,59,255,0.35); }
+.nav-cta:hover { transform:translateY(-2px);box-shadow:0 8px 28px rgba(108,59,255,0.45); }
+.lang-btn { display:flex;align-items:center;gap:6px;padding:8px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:100px;cursor:pointer;font-size:13px;font-weight:700;color:var(--text);transition:all 0.2s; }
+.lang-btn:hover { border-color:var(--c1);box-shadow:var(--shadow2); }
+.lang-code { font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text2); }
+.lang-flag-img { width:36px;height:26px;object-fit:cover;border-radius:5px;box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+.lang-modal-overlay { position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(6px); }
+.lang-modal-overlay.active { opacity:1;pointer-events:all; }
+.lang-modal { background:var(--bg2);border-radius:24px;padding:36px;width:360px;box-shadow:0 40px 100px rgba(0,0,0,0.2);transform:scale(0.92) translateY(10px);transition:all 0.3s; }
+.lang-modal-overlay.active .lang-modal { transform:scale(1) translateY(0); }
+.lang-modal-title { font-size:20px;font-weight:800;color:var(--text);margin-bottom:6px;text-align:center; }
+.lang-modal-sub { font-size:13px;color:var(--text2);text-align:center;margin-bottom:28px; }
+.lang-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+.lang-option { display:flex;flex-direction:column;align-items:center;gap:8px;padding:20px 16px;background:var(--bg);border:2px solid var(--border);border-radius:16px;cursor:pointer;transition:all 0.2s; }
+.lang-option:hover { border-color:var(--c1);background:rgba(108,59,255,0.04);transform:translateY(-3px);box-shadow:var(--shadow2); }
+.lang-option.active-lang { border-color:var(--c1);background:rgba(108,59,255,0.08); }
+.lang-name { font-size:14px;font-weight:800;color:var(--text); }
+.lang-native { font-size:11px;color:var(--text2);font-weight:500; }
+.lang-modal-close-btn { width:100%;margin-top:16px;padding:12px;background:transparent;border:1px solid var(--border);border-radius:12px;cursor:pointer;font-size:13px;color:var(--text2);font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;transition:all 0.2s; }
+.lang-modal-close-btn:hover { background:var(--bg);color:var(--text); }
+.hero { min-height:100vh;display:flex;align-items:center;padding:120px 60px 80px;position:relative;z-index:1; }
+.hero-inner { max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
+.hero-badge { display:inline-flex;align-items:center;gap:8px;background:rgba(108,59,255,0.08);border:1px solid rgba(108,59,255,0.2);padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600;color:var(--c1);margin-bottom:24px; }
+.hero-badge-dot { width:8px;height:8px;background:var(--c5);border-radius:50%;animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.4);opacity:0.7} }
+.hero h1 { font-size:clamp(40px,5vw,68px);font-weight:800;line-height:1.08;letter-spacing:-2px;margin-bottom:8px; }
+.hero h1 .grad-text { background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.hero-sub { font-size:18px;font-weight:600;color:var(--text2);margin-bottom:20px;letter-spacing:-0.3px; }
+.hero-desc { font-size:16px;color:var(--text2);line-height:1.75;margin-bottom:36px;max-width:480px; }
+.hero-tags { display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px; }
+.hero-tag-chip { padding:6px 14px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:0.3px; }
+.chip-purple { background:rgba(108,59,255,0.1);color:var(--c1); }
+.chip-pink { background:rgba(255,59,139,0.1);color:var(--c2); }
+.chip-blue { background:rgba(0,198,255,0.1);color:#0099cc; }
+.chip-green { background:rgba(0,229,160,0.1);color:#00b07a; }
+.chip-yellow { background:rgba(255,184,0,0.1);color:#cc8800; }
+.hero-cta { display:flex;gap:14px;flex-wrap:wrap; }
+.btn-grad { padding:14px 32px;background:var(--grad);color:#fff;border-radius:100px;text-decoration:none;font-size:15px;font-weight:700;box-shadow:0 8px 28px rgba(108,59,255,0.4);transition:all 0.2s;display:inline-block; }
+.btn-grad:hover { transform:translateY(-3px);box-shadow:0 14px 36px rgba(108,59,255,0.5); }
+.btn-outline2 { padding:14px 32px;border:2px solid rgba(108,59,255,0.25);color:var(--c1);border-radius:100px;text-decoration:none;font-size:15px;font-weight:700;transition:all 0.2s;display:inline-block; }
+.btn-outline2:hover { border-color:var(--c1);background:rgba(108,59,255,0.06); }
+.hero-visual { position:relative;height:480px; }
+.float-card { position:absolute;background:var(--bg2);border-radius:20px;padding:20px 24px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,0.8);animation:floatCard 4s ease-in-out infinite; }
+.fc1 { top:0;left:0;width:200px;animation-delay:0s; }
+.fc2 { top:60px;right:0;width:220px;animation-delay:1s; }
+.fc3 { bottom:80px;left:20px;width:190px;animation-delay:2s; }
+.fc4 { bottom:20px;right:30px;width:180px;animation-delay:0.5s; }
+@keyframes floatCard { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.fc-icon { font-size:28px;margin-bottom:10px; }
+.fc-title { font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px; }
+.fc-val { font-size:11px;color:var(--text2);font-family:'JetBrains Mono',monospace; }
+.fc-num { font-size:28px;font-weight:800;margin-bottom:4px; }
+.fc-num.purple { background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.fc-num.blue { background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.fc-num.pink { background:var(--grad3);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.fc-label { font-size:11px;color:var(--text2);font-weight:600; }
+.hero-center-circle { position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:160px;height:160px;background:var(--grad);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 20px rgba(108,59,255,0.1),0 0 0 40px rgba(108,59,255,0.05);animation:floatCard 5s ease-in-out infinite; }
+.hero-center-circle span { font-size:36px;margin-bottom:4px; }
+.hero-center-circle p { font-size:11px;color:#fff;font-weight:700;text-align:center;padding:0 10px; }
+.section-full { padding:100px 0;position:relative;z-index:1; }
+.section-inner { max-width:1200px;margin:0 auto;padding:0 60px; }
+.section-label { display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--c1);margin-bottom:14px; }
+.section-label::before { content:'';width:24px;height:2px;background:var(--grad);border-radius:2px; }
+.section-title { font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1.5px;margin-bottom:14px; }
+.section-desc { font-size:16px;color:var(--text2);line-height:1.7;max-width:520px; }
+.stack-bg { background:var(--bg2); }
+.stack-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:50px; }
+.stack-item { background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:24px 20px;text-align:center;transition:all 0.25s;cursor:default; }
+.stack-item:hover { transform:translateY(-6px);box-shadow:var(--shadow2);border-color:rgba(108,59,255,0.3);background:var(--bg2); }
+.stack-emoji { font-size:32px;margin-bottom:10px;display:block; }
+.stack-name { font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px; }
+.stack-type { font-size:11px;color:var(--text2); }
+.exp-grid { display:flex;flex-direction:column;gap:2px;margin-top:50px; }
+.exp-item { background:var(--bg2);border:1px solid var(--border);padding:32px 36px;display:grid;grid-template-columns:200px 1fr;gap:40px;transition:all 0.25s;position:relative;overflow:hidden; }
+.exp-item::before { content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad);transform:scaleY(0);transition:transform 0.3s;transform-origin:top; }
+.exp-item:hover { box-shadow:var(--shadow);z-index:2; }
+.exp-item:hover::before { transform:scaleY(1); }
+.exp-left { display:flex;flex-direction:column;gap:8px; }
+.exp-period { font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--c1);font-weight:500; }
+.exp-company { font-size:14px;font-weight:700;color:var(--text); }
+.exp-location { font-size:12px;color:var(--text2); }
+.exp-badge { display:inline-block;padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;margin-top:4px; }
+.badge-current { background:rgba(0,229,160,0.15);color:#00b07a; }
+.badge-past { background:rgba(108,59,255,0.1);color:var(--c1); }
+.exp-title { font-size:20px;font-weight:800;color:var(--text);margin-bottom:14px;letter-spacing:-0.5px; }
+.exp-list { list-style:none;display:flex;flex-direction:column;gap:8px; }
+.exp-list li { font-size:14px;color:var(--text2);line-height:1.65;display:flex;gap:10px;align-items:flex-start; }
+.exp-list li::before { content:'→';color:var(--c1);font-weight:700;flex-shrink:0;margin-top:1px; }
+.proj-bg { background:var(--text); }
+.proj-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin-top:50px; }
+.proj-card { border-radius:20px;padding:32px;position:relative;overflow:hidden;transition:all 0.3s; }
+.proj-card:hover { transform:translateY(-6px); }
+.pc1 { background:linear-gradient(135deg,#1a0a3e,#2d1060);border:1px solid rgba(108,59,255,0.3); }
+.pc3 { background:linear-gradient(135deg,#001a30,#003060);border:1px solid rgba(0,198,255,0.3); }
+.pc4 { background:linear-gradient(135deg,#1a1000,#302000);border:1px solid rgba(255,184,0,0.3); }
+.proj-top { display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px; }
+.proj-logo-wrap { width:48px;height:48px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+.proj-logo-wrap img { width:40px;height:40px;object-fit:contain; }
+.proj-link { width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:16px;color:#fff;transition:all 0.2s; }
+.proj-link:hover { background:rgba(255,255,255,0.25);transform:scale(1.1); }
+.proj-title { font-size:18px;font-weight:800;color:#fff;margin-bottom:8px; }
+.proj-sub { font-family:'JetBrains Mono',monospace;font-size:11px;margin-bottom:14px;opacity:0.6; }
+.ps1 { color:#a78bff; } .ps3 { color:#8bd4ff; } .ps4 { color:#ffd98b; }
+.proj-desc { font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:20px; }
+.proj-tags { display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px; }
+.proj-tag { padding:4px 12px;border-radius:100px;font-size:11px;font-weight:600;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8); }
+.proj-stat { font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(255,255,255,0.5);padding-top:16px;border-top:1px solid rgba(255,255,255,0.1); }
+.done-section { margin-top:72px; }
+.done-divider { width:100%;height:1px;background:rgba(255,255,255,0.08);margin-bottom:40px; }
+.done-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:28px; }
+.done-card { display:flex;align-items:center;gap:12px;padding:16px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:14px;text-decoration:none;transition:all 0.2s; }
+.done-card:hover { background:rgba(108,59,255,0.22);border-color:rgba(108,59,255,0.5);transform:translateY(-3px);box-shadow:0 8px 24px rgba(108,59,255,0.25); }
+.done-logo-wrap { width:40px;height:40px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.12); }
+.done-logo-wrap img { width:34px;height:34px;object-fit:contain; }
+.done-domain { font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;color:rgba(255,255,255,0.7);word-break:break-all; }
+.done-card:hover .done-domain { color:#fff; }
+.cert-section { background:var(--bg); }
+.cert-grid-cards { display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:50px; }
+.cert-card-item { background:var(--bg2);border:1px solid var(--border);border-radius:20px;overflow:hidden;transition:all 0.3s;cursor:pointer;position:relative; }
+.cert-card-item:hover { transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(108,59,255,0.3); }
+.cert-thumb { width:100%;height:160px;object-fit:cover;display:block; }
+.cert-info { padding:18px 20px; }
+.cert-issuer-tag { font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--c1);margin-bottom:6px; }
+.cert-name-title { font-size:14px;font-weight:800;color:var(--text);margin-bottom:4px;line-height:1.4; }
+.cert-date-tag { font-size:11px;color:var(--text2);font-family:'JetBrains Mono',monospace; }
+.cert-zoom-hint { position:absolute;top:10px;right:10px;background:rgba(108,59,255,0.9);color:#fff;border-radius:8px;padding:4px 10px;font-size:10px;font-weight:700;opacity:0;transition:opacity 0.2s; }
+.cert-card-item:hover .cert-zoom-hint { opacity:1; }
+.cert-modal-overlay { position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s;backdrop-filter:blur(8px); }
+.cert-modal-overlay.active { opacity:1;pointer-events:all; }
+.cert-modal-inner { position:relative;max-width:860px;width:90%;background:var(--bg2);border-radius:24px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,0.5);transform:scale(0.9);transition:transform 0.3s; }
+.cert-modal-overlay.active .cert-modal-inner { transform:scale(1); }
+.cert-modal-img { width:100%;display:block; }
+.cert-modal-info { padding:24px 28px;display:flex;justify-content:space-between;align-items:center; }
+.cert-modal-title { font-size:16px;font-weight:800;color:var(--text); }
+.cert-modal-sub { font-size:12px;color:var(--text2);margin-top:3px; }
+.cert-modal-close { width:40px;height:40px;border-radius:50%;background:rgba(108,59,255,0.1);border:none;cursor:pointer;font-size:18px;color:var(--c1);display:flex;align-items:center;justify-content:center;transition:all 0.2s; }
+.cert-modal-close:hover { background:var(--c1);color:#fff;transform:rotate(90deg); }
+.contact-section { background:var(--bg2); }
+.contact-wrap { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start; }
+.contact-left h2 { font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-2px;line-height:1.1;margin-bottom:20px; }
+.contact-left h2 .grad-text { background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+.contact-left p { font-size:16px;color:var(--text2);line-height:1.7;margin-bottom:36px; }
+.contact-cards { display:flex;flex-direction:column;gap:10px; }
+.contact-card { display:flex;align-items:center;gap:16px;padding:18px 22px;background:var(--bg);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--text);transition:all 0.2s; }
+.contact-card:hover { border-color:rgba(108,59,255,0.4);background:rgba(108,59,255,0.04);transform:translateX(6px);box-shadow:var(--shadow2); }
+.cc-icon { width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0; }
+.cc-email { background:rgba(108,59,255,0.1); } .cc-phone { background:rgba(0,229,160,0.1); }
+.cc-linkedin { background:rgba(0,119,181,0.1); } .cc-wiki { background:rgba(255,184,0,0.1); }
+.cc-title { font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:1px; }
+.cc-val { font-size:14px;font-weight:700;color:var(--text); }
+.avail-badge { display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.25);padding:8px 18px;border-radius:100px;font-size:13px;font-weight:600;color:#00b07a;margin-bottom:24px; }
+.avail-dot { width:8px;height:8px;background:#00e5a0;border-radius:50%;animation:pulse 2s infinite; }
+footer { background:var(--text);padding:40px 60px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1; }
+footer p { font-size:13px;color:rgba(255,255,255,0.4); }
+footer span { background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700; }
+.reveal { opacity:0;transform:translateY(32px);transition:opacity 0.6s ease,transform 0.6s ease; }
+.reveal.visible { opacity:1;transform:translateY(0); }
+@media (max-width:960px) {
+  nav { padding:14px 20px; }
+  .nav-links { display:none; }
+  .hero { padding:100px 20px 60px; }
+  .hero-inner { grid-template-columns:1fr;gap:40px; }
+  .hero-visual { display:none; }
+  .section-inner { padding:0 20px; }
+  .section-full { padding:60px 0; }
+  .exp-item { grid-template-columns:1fr;gap:16px; }
+  .contact-wrap { grid-template-columns:1fr;gap:40px; }
+  footer { padding:24px 20px;flex-direction:column;gap:8px;text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<nav>
+  <a href="#home" class="nav-logo">Saytların Hazırlanması</a>
+  <ul class="nav-links">
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#experience">Təcrübə</a></li>
+    <li><a href="#projects">Layihələr</a></li>
+    <li><a href="#certificates">Sertifikatlar</a></li>
+    <li><a href="#contact">Əlaqə</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-btn" onclick="openLangModal()" id="langBtn">
+      <img src="https://elmarzeynalov.com/flags/AZ.png" alt="AZ" id="currentFlagImg" style="width:22px;height:16px;object-fit:cover;border-radius:3px;">
+      <span class="lang-code" id="currentLangCode">AZ</span>
+    </button>
+    <a href="#contact" class="nav-cta">Sayt Sifariş Et</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Bakı, Azərbaycan · Yeni fürsətlər üçün açıq
+      </div>
+      <h1>Full-Stack<br>Developer &<br><span class="grad-text">Security</span></h1>
+      <p class="hero-sub">Lead Engineer · AI İnteqrasiyası · Kibertəhlükəsizlik</p>
+      <p class="hero-desc">9+ il ərzində <strong>15+ real layihə</strong> qurdum, kiberhücumlardan qorudum, <strong>AI həlləri</strong> ilə biznes proseslərini avtomatlaşdırdım. Kod yazmaqla yanaşı, sistemin təhlükəsizliyini də təmin edən az sayda mütəxəssisdənəm.</p>
+      <div class="hero-tags">
+        <span class="hero-tag-chip chip-purple">PHP / MySQL</span>
+        <span class="hero-tag-chip chip-pink">Security Audit</span>
+        <span class="hero-tag-chip chip-blue">AI Integration</span>
+        <span class="hero-tag-chip chip-green">System Design</span>
+        <span class="hero-tag-chip chip-yellow">DevOps Basics</span>
+        <span class="hero-tag-chip chip-purple">Penetration Testing</span>
+        <span class="hero-tag-chip chip-pink">Incident Response</span>
+        <span class="hero-tag-chip chip-blue">REST API</span>
+        <span class="hero-tag-chip chip-green">Android Dev</span>
+        <span class="hero-tag-chip chip-yellow">WordPress</span>
+        <span class="hero-tag-chip chip-purple">JavaScript</span>
+        <span class="hero-tag-chip chip-pink">SEO Optimization</span>
+        <span class="hero-tag-chip chip-blue">WhatsApp API</span>
+        <span class="hero-tag-chip chip-green">Linux / Kali</span>
+        <span class="hero-tag-chip chip-yellow">ZKAccess</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-grad">Layihələrə bax</a>
+        <a href="#contact" class="btn-outline2">Əlaqə saxla</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="float-card fc1">
+        <div class="fc-icon">🛡️</div>
+        <div class="fc-title">Dövlət Pentesti</div>
+        <div class="fc-val">GOV.AZ · CERT hesabatı</div>
+      </div>
+      <div class="float-card fc2">
+        <div class="fc-num purple">9+</div>
+        <div class="fc-label">İl Təcrübə</div>
+      </div>
+      <div class="float-card fc3">
+        <div class="fc-num blue">15+</div>
+        <div class="fc-label">Canlı Layihə</div>
+      </div>
+      <div class="float-card fc4">
+        <div class="fc-icon">🤖</div>
+        <div class="fc-title">AI Bot</div>
+        <div class="fc-val">WhatsApp + Web · 1000+ user</div>
+      </div>
+      <div class="hero-center-circle">
+        <span>⚡</span>
+        <p>Full-Stack & Security</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-full stack-bg" id="stack">
+  <div class="section-inner">
+    <div class="section-label">Texnologiyalar</div>
+    <h2 class="section-title">Texniki Stack</h2>
+    <p class="section-desc">Veb inkişafdan kibertəhlükəsizliyə, mobil tətbiqlərdən AI inteqrasiyasına qədər geniş arsenal.</p>
+    <div class="stack-grid">
+      <div class="stack-item reveal"><span class="stack-emoji">🐘</span><div class="stack-name">PHP</div><div class="stack-type">Backend</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🗄️</span><div class="stack-name">MySQL</div><div class="stack-type">Verilənlər Bazası</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🔗</span><div class="stack-name">REST API</div><div class="stack-type">Backend</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🌐</span><div class="stack-name">JavaScript</div><div class="stack-type">Frontend</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🎨</span><div class="stack-name">HTML / CSS</div><div class="stack-type">Frontend</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">📝</span><div class="stack-name">WordPress</div><div class="stack-type">CMS</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🐧</span><div class="stack-name">Linux / Kali</div><div class="stack-type">OS & Security</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🔍</span><div class="stack-name">Burp Suite</div><div class="stack-type">Pentest Tool</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🛡️</span><div class="stack-name">OWASP / WAF</div><div class="stack-type">Security</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🔐</span><div class="stack-name">Metasploit</div><div class="stack-type">Pentest Tool</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🤖</span><div class="stack-name">Claude / GPT API</div><div class="stack-type">AI İnteqrasiya</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">💬</span><div class="stack-name">WhatsApp API</div><div class="stack-type">Mesajlaşma</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">📱</span><div class="stack-name">Android</div><div class="stack-type">Mobil</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">📊</span><div class="stack-name">Google Analytics</div><div class="stack-type">Analitika</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🔑</span><div class="stack-name">ZKAccess</div><div class="stack-type">Giriş Nəzarəti</div></div>
+      <div class="stack-item reveal"><span class="stack-emoji">🌍</span><div class="stack-name">SEO</div><div class="stack-type">Optimallaşdırma</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-full" id="experience">
+  <div class="section-inner">
+    <div class="section-label">Karyera</div>
+    <h2 class="section-title">İş Təcrübəsi</h2>
+    <p class="section-desc">9+ il ərzində dövlət qurumlarından müasir texnologiya şirkətlərinə qədər geniş sahədə iş təcrübəsi.</p>
+    <div class="exp-grid">
+
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">Mart 2022 — İndi</div>
+          <div class="exp-company">WSEC Azərbaycan</div>
+          <div class="exp-location">📍 Bakı</div>
+          <div class="exp-badge badge-current">● Cari</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-title">Lead Software Engineer & Kibertəhlükəsizlik</div>
+          <ul class="exp-list">
+            <li>wsec.edu.az təhsil platformasının sıfırdan arxitekturası, texniki rəhbərliyi və tam inkişaf dövrünün (SDLC) idarə edilməsi.</li>
+            <li>Tələbə qeydiyyat və müraciət sisteminin hazırlanması — çoxmərhələli iş axını, sənəd idarəetməsi və status izləmə.</li>
+            <li>Claude API və ChatGPT API inteqrasiyası əsasında AI chatbotun hazırlanması — WhatsApp və veb kanalları üzrə 3000+ istifadəçiyə avtomatik dəstək.</li>
+            <li>RESTful API arxitekturasının qurulması və mobil tətbiq inteqrasiyasının təmin edilməsi.</li>
+            <li>Saytın axtarış sistemlərində görünürlüyünün artırılması — texniki SEO optimallaşdırması, strukturlaşdırılmış məlumat işaretləməsi və səhifə sürətinin yüksəldilməsi.</li>
+            <li>Kibertəhlükəsizlik insidentlərinin idarəsi (Incident Response) — real vaxt monitorinq sistemi vasitəsilə zərərli IP-lərin avtomatik bloklanması, şübhəli trafik davranışlarının aşkarlanması və risklərin proaktiv şəkildə minimallaşdırılması.</li>
+            <li>2025-ci ilin sentyabr ayında wsec.edu.az platformasına qarşı həyata keçirilən koordinasiyalı çoxmərhələli hücumun (database injection və autentifikasiya bypass cəhdləri daxil olmaqla) erkən mərhələdə aşkarlanması və aktiv müdaxilə ilə tam neytrallaşdırılması — verilənlər bazası və istifadəçi məlumatları tam qorunmuş, xidmət fasiləsizliyi təmin edilmişdir.</li>
+            <li>Yüksək həcmli məlumatlar üçün MySQL verilənlər bazasının optimallaşdırılması və inkişaf komandasının texniki rəhbərliyi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">İyun 2023 — İndi</div>
+          <div class="exp-company">Dendrologiya Bağı (Publik Hüquqi Şəxs)</div>
+          <div class="exp-location">📍 Bakı</div>
+          <div class="exp-badge badge-current">● Cari</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-title">IT Mütəxəssisi & Sistem Administratoru</div>
+          <ul class="exp-list">
+            <li>dendrologiya.gov.az domeninin rəsmi əldə edilməsi, saytın sıfırdan hazırlanması və Azərbaycan Xüsusi Rabitə və İnformasiya Texnologiyaları Agentliyinin (AzXRİTDA) apardığı pentest yoxlamaları nəticəsində aşkar edilmiş təhlükəsizlik boşluqlarının tam aradan qaldırılması.</li>
+            <li>Kompüter avadanlığının texniki xidməti — RAM, HDD/SSD, anakart dəyişiklikləri və yüksəltmələri.</li>
+            <li>İnstitut daxilində şəbəkə infrastrukturunun qurulması — internet kabellərin çəkilməsi, router/switch konfiqurasiyası.</li>
+            <li>Əməkdaşların kompüter, printer və periferik cihazlarla bağlı texniki problemlərinin həlli.</li>
+            <li>Əməliyyat sistemlərinin quraşdırılması, proqram yeniləmələri və antivirus idarəetməsi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-left">
+          <div class="exp-period">Avq 2016 — Dek 2021</div>
+          <div class="exp-company">Dendrologiya İnstitutu</div>
+          <div class="exp-location">📍 Elm və Təhsil Nazirliyi · Bakı</div>
+          <div class="exp-badge badge-past">Keçmiş</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-title">Proqram Mühəndisi</div>
+          <ul class="exp-list">
+            <li>İT infrastrukturunun və avadanlığının texniki xidməti.</li>
+            <li>Əməkdaşlara proqram problemləri üçün texniki dəstək (Advanced-Level Support).</li>
+            <li>İnstitutun WordPress veb-saytının əsaslı texniki xidməti, plaqin yeniləmələri və xəta düzəlişləri.</li>
+            <li>Daxili məlumat bazasının idarəsi, ehtiyat nüsxəsi.</li>
+            <li>ZKAccess proqramı vasitəsilə turniket və qapı giriş nəzarəti sistemlərinin quraşdırılması, konfiqurasiyası və texniki xidməti.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section-full proj-bg" id="projects">
+  <div class="section-inner">
+    <div class="section-label" style="color:#a78bff">Layihələr</div>
+    <h2 class="section-title" style="color:#fff">Davamlı inkişaf etdirdiyim layihələr</h2>
+    <p class="section-desc" style="color:rgba(255,255,255,0.5)">Uzunmüddətli əməkdaşlıq çərçivəsində idarə etdiyim, mütəmadi olaraq yenilənən, yeni funksiyalar əlavə olunan və texniki olaraq davamlı inkişaf etdirilən sistemlər.</p>
+
+    <div class="proj-grid">
+      <div class="proj-card pc1 reveal">
+        <div class="proj-top">
+          <div class="proj-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-wsec.png" alt="WSEC"></div>
+          <a href="https://wsec.edu.az" target="_blank" class="proj-link">↗</a>
+        </div>
+        <div class="proj-title">WSEC Azerbaycan Platforması</div>
+        <div class="proj-sub ps1">// wsec.edu.az · Full-Stack Sistem</div>
+        <div class="proj-desc">Əcnəbi tələbələrin Azərbaycan universitetlərinə qəbul prosesinin rəqəmsal idarə olunması üçün hazırlanmış platforma. Admin panel, tələbə portalı, sənəd idarəetməsi, ödəniş axını və AI əsaslı dəstək modulları inteqrasiya edilmişdir.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span>
+          <span class="proj-tag">REST API</span><span class="proj-tag">AI Integration</span><span class="proj-tag">Security</span>
+        </div>
+        <div class="proj-stat">20+ ölkədən müraciət · Minlərlə istifadəçi</div>
+      </div>
+
+      <div class="proj-card pc3 reveal">
+        <div class="proj-top">
+          <div class="proj-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-studyturkey.png" alt="Study Turkey Hub"></div>
+          <a href="https://studyturkeyhub.com" target="_blank" class="proj-link">↗</a>
+        </div>
+        <div class="proj-title">Study Turkey Hub Platforması</div>
+        <div class="proj-sub ps3">// SaaS Admin Platform</div>
+        <div class="proj-desc">Təhsil konsultasiya fəaliyyəti üçün hazırlanmış çoxistifadəçili idarəetmə sistemi. Müraciətlərin izlənməsi, sənəd dövriyyəsi və rol əsaslı giriş nəzarəti mexanizmi tətbiq edilmişdir.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span><span class="proj-tag">RBAC</span>
+        </div>
+        <div class="proj-stat">2400+ tələbə müraciətinin idarə olunması</div>
+      </div>
+
+      <div class="proj-card pc4 reveal">
+        <div class="proj-top">
+          <div class="proj-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-dendrologiya.png" alt="Dendrologiya Bağı"></div>
+          <a href="https://dendrologiya.gov.az" target="_blank" class="proj-link">↗</a>
+        </div>
+        <div class="proj-title">Dendrologiya Bağı İdarəetmə Sistemi</div>
+        <div class="proj-sub ps4">// Dövlət Qurumu · dendrologiya.gov.az</div>
+        <div class="proj-desc">Dövlət qurumu üçün daxili proseslərin rəqəmsallaşdırılması məqsədilə hazırlanmış veb əsaslı idarəetmə sistemi. AzXRİTDA pentest yoxlamalarından uğurla keçmişdir.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Server Admin</span><span class="proj-tag">Security</span>
+        </div>
+        <div class="proj-stat">Daxili proseslərin rəqəmsal idarəetməsi · AzXRİTDA təsdiqlənmiş</div>
+      </div>
+    </div>
+
+    <div class="done-section">
+      <div class="done-divider"></div>
+      <div class="section-label" style="color:#a78bff">Tamamlanmış Layihələr</div>
+      <h2 class="section-title" style="color:#fff">Sifariş əsasında hazırlanmış və təhvil verilmiş layihələr</h2>
+      <p style="color:rgba(255,255,255,0.4);font-size:14px;margin-bottom:4px;">Müəyyən edilmiş texniki tapşırıq və büdcə çərçivəsində hazırlanaraq tamamlanmış, müştəriyə yekun formada təqdim edilmiş layihələr.</p>
+      <div class="done-grid">
+        <a href="https://mondolang.institute" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-mondolang.png" alt="Mondolang"></div><span class="done-domain">mondolang.institute</span></a>
+        <a href="https://ecs.edu.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-ecs.png" alt="ECS"></div><span class="done-domain">ecs.edu.az</span></a>
+        <a href="https://edg.edu.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-edg.png" alt="EDG"></div><span class="done-domain">edg.edu.az</span></a>
+        <a href="https://qrmenu.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-qrmenu.png" alt="QR Menu"></div><span class="done-domain">qrmenu.az</span></a>
+        <a href="https://randevular.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-randevular.png" alt="Randevular"></div><span class="done-domain">randevular.az</span></a>
+        <a href="https://bakuluxurytours.com" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-bakuluxury.png" alt="Baku Luxury Tours"></div><span class="done-domain">bakuluxurytours.com</span></a>
+        <a href="https://dendrologiya.cloud" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-dendrologiya.png" alt="Dendrologiya Cloud"></div><span class="done-domain">dendrologiya.cloud</span></a>
+        <a href="https://samirbagirova.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-samirbagirova.png" alt="Samir Bagirova"></div><span class="done-domain">samirbagirova.az</span></a>
+        <a href="https://royalcastle.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-royalcastle.png" alt="Royal Castle"></div><span class="done-domain">royalcastle.az</span></a>
+        <a href="https://gmu.edu.az" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-gmu.png" alt="GMU"></div><span class="done-domain">gmu.edu.az</span></a>
+        <a href="https://pbgroup.az/" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-pbgroup.png" alt="PB Group"></div><span class="done-domain">pbgroup.az</span></a>
+        <a href="https://azerbaijanstudentdormitory.az/" target="_blank" class="done-card reveal"><div class="done-logo-wrap"><img src="https://elmarzeynalov.com/images/logo-dormitory.png" alt="Azerbaijan Student Dormitory"></div><span class="done-domain">azerbaijanstudentdormitory.az</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-full cert-section" id="certificates">
+  <div class="section-inner">
+    <div class="section-label">Sertifikatlar</div>
+    <h2 class="section-title">Peşəkar Sertifikatlar</h2>
+    <p class="section-desc">Tamamlanmış kurslar və qazanılmış peşəkar sertifikatlar.</p>
+    <div class="cert-grid-cards">
+
+      <div class="cert-card-item reveal" onclick="openCertModal('cert1')">
+        <div class="cert-zoom-hint">🔍 Böyüt</div>
+        <img class="cert-thumb" src="https://elmarzeynalov.com/images/elmar-zeynalov-google-certifcate.png" alt="Google Dijital Atölye">
+        <div class="cert-info">
+          <div class="cert-issuer-tag">Google · IAB Europe · The Open University</div>
+          <div class="cert-name-title">Rəqəmsal Marketinqin Əsasları</div>
+          <div class="cert-date-tag">📅 05/01/2020 · No: YT4 Z5Y H8E</div>
+        </div>
+      </div>
+
+      <div class="cert-card-item reveal" onclick="openCertModal('cert2')">
+        <div class="cert-zoom-hint">🔍 Böyüt</div>
+        <img class="cert-thumb" src="https://elmarzeynalov.com/images/elmar-zeynalov-google-certifcate.png" alt="Google Analytics">
+        <div class="cert-info">
+          <div class="cert-issuer-tag">Google Analytics Academy</div>
+          <div class="cert-name-title">Google Analytics Fərdi Kvalifikasiya</div>
+          <div class="cert-date-tag">📅 2020</div>
+        </div>
+      </div>
+
+      <div class="cert-card-item reveal" onclick="openCertModal('cert3')">
+        <div class="cert-zoom-hint">🔍 Böyüt</div>
+        <img class="cert-thumb" src="https://elmarzeynalov.com/images/elmar-zeynalov-google-certifcate.png" alt="Udemy Veb İnkişaf">
+        <div class="cert-info">
+          <div class="cert-issuer-tag">Udemy</div>
+          <div class="cert-name-title">Veb İnkişaf — 128 Saatlıq Kurs</div>
+          <div class="cert-date-tag">📅 2020 · 128 saat</div>
+        </div>
+      </div>
+
+      <div class="cert-card-item reveal" onclick="openCertModal('cert4')">
+        <div class="cert-zoom-hint">🔍 Böyüt</div>
+        <img class="cert-thumb" src="https://elmarzeynalov.com/images/elmar-zeynalov-google-certifcate.png" alt="WSEC Təşəkkürnamə">
+        <div class="cert-info">
+          <div class="cert-issuer-tag">WSEC Azərbaycan</div>
+          <div class="cert-name-title">Kiberhücumun Dəf Edilməsinə Görə Təşəkkürnamə</div>
+          <div class="cert-date-tag">📅 Sentyabr 2025</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="section-full contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <div class="avail-badge"><div class="avail-dot"></div>Yeni fürsətlər üçün açıqam</div>
+        <h2>Birgə<br><span class="grad-text">böyük işlər</span><br>görək.</h2>
+        <p>Full-stack inkişaf, kibertəhlükəsizlik auditi və ya AI inteqrasiyası layihəniz var? Danışaq!</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:info@elmarzeynalov.com" class="contact-card">
+          <div class="cc-icon cc-email">📧</div>
+          <div><div class="cc-title">Email</div><div class="cc-val">info@elmarzeynalov.com</div></div>
+        </a>
+        <a href="tel:+994502009077" class="contact-card">
+          <div class="cc-icon cc-phone">📱</div>
+          <div><div class="cc-title">Telefon</div><div class="cc-val">(+994) 50 200 90 77</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/elmar-zeynalov-programmierer" target="_blank" class="contact-card">
+          <div class="cc-icon cc-linkedin">💼</div>
+          <div><div class="cc-title">LinkedIn</div><div class="cc-val">linkedin.com/in/elmar-zeynalov-programmierer</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 <span>Elmar Zeynalov</span>. Bütün hüquqlar qorunur.</p>
+  <p style="color:rgba(255,255,255,0.3);font-size:13px;">Bakı, Azərbaycan · <span>saytlarin-hazirlanmasi.github.io</span></p>
+</footer>
+
+<!-- CERT MODAL -->
+<div class="cert-modal-overlay" id="certModal" onclick="closeCertModal(event)">
+  <div class="cert-modal-inner">
+    <img class="cert-modal-img" id="certModalImg" src="" alt="">
+    <div class="cert-modal-info">
+      <div>
+        <div class="cert-modal-title" id="certModalTitle"></div>
+        <div class="cert-modal-sub" id="certModalSub"></div>
+      </div>
+      <button class="cert-modal-close" onclick="closeCertModal(event)">✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- DİL MODALI -->
+<div class="lang-modal-overlay" id="langModal" onclick="closeLangModalOutside(event)">
+  <div class="lang-modal">
+    <div class="lang-modal-title">🌐 Dil Seçin</div>
+    <div class="lang-modal-sub">Saytı hansı dildə görmək istərdiniz?</div>
+    <div class="lang-grid">
+      <div class="lang-option active-lang" onclick="setLang('az')" id="lang-az">
+        <img src="https://elmarzeynalov.com/flags/AZ.png" class="lang-flag-img" alt="AZ">
+        <span class="lang-name">Azərbaycan</span>
+        <span class="lang-native">Azərbaycan dili</span>
+      </div>
+      <div class="lang-option" onclick="setLang('en')" id="lang-en">
+        <img src="https://elmarzeynalov.com/flags/GB.png" class="lang-flag-img" alt="EN">
+        <span class="lang-name">English</span>
+        <span class="lang-native">İngilis dili</span>
+      </div>
+      <div class="lang-option" onclick="setLang('ru')" id="lang-ru">
+        <img src="https://elmarzeynalov.com/flags/RU.png" class="lang-flag-img" alt="RU">
+        <span class="lang-name">Русский</span>
+        <span class="lang-native">Rus dili</span>
+      </div>
+      <div class="lang-option" onclick="setLang('de')" id="lang-de">
+        <img src="https://elmarzeynalov.com/flags/DE.png" class="lang-flag-img" alt="DE">
+        <span class="lang-name">Deutsch</span>
+        <span class="lang-native">Alman dili</span>
+      </div>
+      <div class="lang-option" onclick="setLang('tr')" id="lang-tr">
+        <img src="https://elmarzeynalov.com/flags/TR.png" class="lang-flag-img" alt="TR">
+        <span class="lang-name">Türkçe</span>
+        <span class="lang-native">Türk dili</span>
+      </div>
+    </div>
+    <button class="lang-modal-close-btn" onclick="closeLangModal()">Bağla ✕</button>
+  </div>
+</div>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), entry.target.dataset.delay || 0);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach((el, i) => { el.dataset.delay = (i % 4) * 80; observer.observe(el); });
+
+  const sections = document.querySelectorAll('section, div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 200) current = sec.getAttribute('id'); });
+    navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--c1)' : ''; });
+  });
+
+  const certData = {
+    cert1: { title: 'Rəqəmsal Marketinqin Əsasları', sub: 'Google · IAB Europe · The Open University · 05/01/2020' },
+    cert2: { title: 'Google Analytics Fərdi Kvalifikasiya', sub: 'Google Analytics Academy · 2020' },
+    cert3: { title: 'Veb İnkişaf — 128 Saatlıq Kurs', sub: 'Udemy · 2020 · 128 saat' },
+    cert4: { title: 'Kiberhücumun Dəf Edilməsinə Görə Təşəkkürnamə', sub: 'WSEC Azərbaycan · Sentyabr 2025' },
+  };
+
+  function openCertModal(id) {
+    const data = certData[id];
+    const card = document.querySelector(`[onclick="openCertModal('${id}')"]`);
+    const img = card.querySelector('.cert-thumb');
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('certModalImg');
+    if (img) { modalImg.src = img.src; modalImg.style.display = 'block'; }
+    else { modalImg.style.display = 'none'; }
+    document.getElementById('certModalTitle').textContent = data.title;
+    document.getElementById('certModalSub').textContent = data.sub;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal(e) {
+    if (!e || e.target === document.getElementById('certModal') || e.currentTarget.classList.contains('cert-modal-close')) {
+      document.getElementById('certModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function openLangModal() { document.getElementById('langModal').classList.add('active'); document.body.style.overflow = 'hidden'; }
+  function closeLangModal() { document.getElementById('langModal').classList.remove('active'); document.body.style.overflow = ''; }
+  function closeLangModalOutside(e) { if (e.target === document.getElementById('langModal')) closeLangModal(); }
+
+  /* Dil keçidi — elmarzeynalov.com-a yönləndirir */
+  function setLang(lang) { window.location.href = 'https://elmarzeynalov.com/' + lang + '/'; }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeLangModal();
+      document.getElementById('certModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+</script>
+</body>
+</html>
